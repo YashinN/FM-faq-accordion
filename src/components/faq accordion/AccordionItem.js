@@ -18,10 +18,12 @@ const AccordionItem = ({
       <div
         className={`${styles.accordionItem__titleContainer} ${styles.titleContainer}`}
       >
-        <h2 className={styles.titleContainer__question}>{question}</h2>
+        <h2 className={`${styles.titleContainer__question} custom_cursor`}>
+          {question}
+        </h2>
 
         <button
-          className={styles.titleContainer__button}
+          className={`${styles.titleContainer__button} custom_cursor`}
           onClick={() => handleClick(index)}
         >
           {openIndex === index ? (
