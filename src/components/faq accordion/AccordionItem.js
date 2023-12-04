@@ -1,17 +1,8 @@
 import styles from "./AccordionItem.module.scss";
 import plusIcon from "../images/icon-plus.svg";
 
-const AccordionItem = ({
-  question,
-  answer,
-  openIndex,
-  setOpenIndex,
-  index,
-}) => {
-  const handleClick = (i) => {
-    setOpenIndex(i);
-    if (openIndex === i) setOpenIndex(null);
-  };
+const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
+  const { question, answer } = accordionContent;
 
   return (
     <div className={styles.accordionItem}>
@@ -20,15 +11,12 @@ const AccordionItem = ({
       >
         <h2
           className={`${styles.titleContainer__question} custom_cursor`}
-          onClick={() => handleClick(index)}
+          onClick={() => dispatch({ type: "toggle", payload: index })}
         >
           {question}
         </h2>
 
-        <button
-          className={`${styles.titleContainer__button} custom_cursor`}
-          onClick={() => handleClick(index)}
-        >
+        <button className={`${styles.titleContainer__button} custom_cursor`}>
           {openIndex === index ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
