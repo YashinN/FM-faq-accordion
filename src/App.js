@@ -4,7 +4,7 @@ import FaqAccordion from "./components/faq accordion/FaqAccordion";
 function App({}) {
   return (
     <Main>
-      <FaqAccordion></FaqAccordion>
+      <FaqAccordion />
     </Main>
   );
 }

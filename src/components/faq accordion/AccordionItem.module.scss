@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.accordionItem {
+  &__titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+
+    h2 {
+      font-size: 1.8rem;
+      color: $text-bold;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $accent-pink;
+      }
+    }
+
+    button {
+      background-color: #fff;
+      border-radius: 100%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__answer {
+    font-size: 1.6rem;
+    color: $text-light;
+    margin-bottom: 2.4rem;
+    line-height: 2.21rem;
+  }
+}
