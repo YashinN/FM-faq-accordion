@@ -1,6 +1,4 @@
-import { children } from "react";
-
-const Main = () => {
+const Main = ({ children }) => {
   return <main>{children}</main>;
 };
 

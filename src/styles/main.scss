@@ -15,5 +15,8 @@ body {
 
 main {
   min-height: 100vh;
-  background-color: $bg-bg-light-pink;
+  //   background-color: $bg-bg-light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
