@@ -18,7 +18,10 @@ const AccordionItem = ({
       <div
         className={`${styles.accordionItem__titleContainer} ${styles.titleContainer}`}
       >
-        <h2 className={`${styles.titleContainer__question} custom_cursor`}>
+        <h2
+          className={`${styles.titleContainer__question} custom_cursor`}
+          onClick={() => handleClick(index)}
+        >
           {question}
         </h2>
 
