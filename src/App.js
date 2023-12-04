@@ -1,10 +1,10 @@
 import Main from "./components/Main";
-import FaqLayout from "./components/faq accordion/FaqLayout";
+import FaqAccordion from "./components/faq accordion/FaqAccordion";
 
 function App({}) {
   return (
     <Main>
-      <FaqLayout></FaqLayout>
+      <FaqAccordion></FaqAccordion>
     </Main>
   );
 }
