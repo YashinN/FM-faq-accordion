@@ -48,7 +48,17 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
         </button>
       </div>
 
-      {
+      {index === openIndex && (
+        <p
+          className={`${styles.accordionItem__answer} ${
+            index === 3 && styles.accordionItem__answer_marginTop
+          }`}
+        >
+          {answer}
+        </p>
+      )}
+
+      {/* {
         <motion.div
           variants={variants}
           animate={index === openIndex ? "visible" : "hidden"}
@@ -62,7 +72,7 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
             {answer}
           </p>
         </motion.div>
-      }
+      } */}
     </div>
   );
 };

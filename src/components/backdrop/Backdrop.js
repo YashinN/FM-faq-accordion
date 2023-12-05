@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 
 const svgVariants = {
   hidden: {
-    pathLength: 0,
-    stroke: "#f8eeff",
+    // pathLength: 0,
+    // stroke: "#f8eeff",
   },
   visible: {
-    pathLength: 1,
-    stroke: "#AD28EB",
-    transition: {
-      duration: 2,
-    },
+    // pathLength: 1,
+    // stroke: "#AD28EB",
+    // transition: {
+    //   duration: 2,
+    // },
   },
 };
 
