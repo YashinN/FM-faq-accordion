@@ -41,6 +41,7 @@ const FaqAccordion = () => {
       <section className={styles.faqAccordion__faq}>
         {accordionContent.map((item, index) => (
           <AccordionItem
+            key={item.question}
             accordionContent={item}
             index={index}
             dispatch={dispatch}
