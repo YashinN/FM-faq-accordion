@@ -26,12 +26,14 @@ const FaqAccordion = () => {
 
   return (
     <div className={styles.faqAccordion}>
-      <img
-        className={styles.faqAccordion__icon}
-        src={starIcon}
-        alt="purple star icon"
-      />
-      <h1 className={styles.faqAccordion__heading}>FAQs</h1>
+      <div className={`${styles.faqAccordion__title} ${styles.title}`}>
+        <img
+          className={styles.title__icon}
+          src={starIcon}
+          alt="purple star icon"
+        />
+        <h1 className={styles.title__heading}>FAQs</h1>
+      </div>
       <section className={styles.faqAccordion__faq}>
         {accordionContent.map((item, index) => (
           <AccordionItem
