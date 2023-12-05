@@ -30,6 +30,7 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
         <button
           className={`${styles.titleContainer__button} custom_cursor`}
           onClick={() => dispatch({ type: "toggle", payload: index })}
+          aria-label="toggle faq"
         >
           {openIndex === index ? (
             <svg
