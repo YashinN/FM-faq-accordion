@@ -11,11 +11,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 2.4rem;
     }
   }
 
   &__answer {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
     color: $text-light;
     line-height: 2.4rem;
     margin-bottom: 2.4rem;
@@ -35,13 +36,13 @@
   padding-bottom: 2.4rem;
 
   &__question {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 3vw, 1.8rem);
     font-weight: 600;
     line-height: 21.1px;
 
     &_removeSpacing {
       padding-bottom: 0;
-      font-size: 1.8rem;
+      font-size: clamp(1.6rem, 3vw, 1.8rem);
       font-weight: 600;
     }
 
