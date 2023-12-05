@@ -6,7 +6,7 @@ import starIconMobile from "../images/icon-star-mobile.svg";
 import starIconDesktop from "../images/icon-star-desktop.svg";
 
 const initialState = {
-  openIndex: null,
+  openIndex: 0,
 };
 
 const reducer = (state, action) => {
