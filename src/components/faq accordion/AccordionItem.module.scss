@@ -35,11 +35,9 @@
   padding-bottom: 2.4rem;
 
   &__question {
-    transition: all 0.3s ease;
-
+    // transition: all 0.3s ease;
     font-size: 1.8rem;
     font-weight: 600;
-    width: 100vw;
     line-height: 21.1px;
 
     &_removeSpacing {
