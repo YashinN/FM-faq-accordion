@@ -1,6 +1,17 @@
 import styles from "./AccordionItem.module.scss";
 import IconMinus from "./IconMinus";
 import IconPlus from "./IconPlus";
+import { motion } from "framer-motion";
+
+const variants = {
+  visible: {
+    height: "max-content",
+  },
+  hidden: {
+    height: 0,
+    overflow: "hidden",
+  },
+};
 
 const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
   const { question, answer } = accordionContent;
