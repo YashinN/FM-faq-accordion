@@ -5,12 +5,19 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
   const { question, answer } = accordionContent;
 
   return (
-    <div className={styles.accordionItem}>
+    <div
+      className={`${styles.accordionItem} ${index == 3 && styles.removeBorder}`}
+    >
       <div
         className={`${styles.accordionItem__titleContainer} ${styles.titleContainer}`}
       >
         <h2
-          className={`${styles.titleContainer__question} custom_cursor`}
+          className={`custom_cursor ${
+            index === 3
+              ? styles.titleContainer__question_removeSpacing
+              : styles.titleContainer__question
+          } 
+          }`}
           onClick={() => dispatch({ type: "toggle", payload: index })}
         >
           {question}

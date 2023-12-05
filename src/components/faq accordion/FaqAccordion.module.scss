@@ -2,11 +2,26 @@
 
 .faqAccordion {
   max-width: 60rem;
+  height: 100%;
   background-color: $bg-white;
   padding: 4rem;
   border-radius: 1.6rem;
 
   &__heading {
     font-size: 5.2rem;
+    display: inline-block;
+    height: 6.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 2.4rem;
+  }
+
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
   }
 }

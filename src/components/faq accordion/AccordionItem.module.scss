@@ -1,22 +1,8 @@
 @import "../../styles/variables";
 
 .accordionItem {
+  border-bottom: 1px solid $bg-bg-light-pink;
   &__titleContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.4rem;
-
-    h2 {
-      font-size: 1.8rem;
-      color: $text-bold;
-      transition: all 0.3s ease;
-
-      &:hover {
-        color: $accent-pink;
-      }
-    }
-
     button {
       background-color: #fff;
       border-radius: 100%;
@@ -30,7 +16,40 @@
   &__answer {
     font-size: 1.6rem;
     color: $text-light;
+    line-height: 2.4rem;
+    margin-top: 2.4rem;
     margin-bottom: 2.4rem;
-    line-height: 2.21rem;
+  }
+}
+
+.removeBorder {
+  border: none;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: $text-bold;
+
+  &__question {
+    transition: all 0.3s ease;
+    padding-bottom: 2.4rem;
+    font-size: 1.8rem;
+    width: 100vw;
+
+    &_removeSpacing {
+      padding-bottom: 0;
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      color: $accent-pink;
+    }
+
+    &_removeSapcing {
+      padding-bottom: 0;
+      background-color: aqua;
+    }
   }
 }
