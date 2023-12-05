@@ -49,7 +49,6 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
       </div>
 
       <motion.div
-        className="test"
         variants={variants}
         animate={index === openIndex ? "visible" : "hidden"}
         initial={"hidden"}
