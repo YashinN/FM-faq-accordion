@@ -30,8 +30,8 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
           {openIndex === index ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="31"
+              width="24"
+              height="24"
               fill="none"
               viewBox="0 0 30 31"
             >
@@ -43,8 +43,8 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="31"
+              width="24"
+              height="24"
               fill="none"
               viewBox="0 0 30 31"
             >
