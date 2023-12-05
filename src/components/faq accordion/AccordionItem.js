@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const variants = {
   visible: {
-    height: "max-content",
+    // height: "max-content",
   },
   hidden: {
-    height: 0,
-    overflow: "hidden",
+    // height: 0,
+    // overflow: "hidden",
   },
 };
 
@@ -48,7 +48,7 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
         </button>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={variants}
         animate={index === openIndex ? "visible" : "hidden"}
         initial={"hidden"}
@@ -60,7 +60,17 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
         >
           {answer}
         </p>
-      </motion.div>
+      </motion.div> */}
+
+      {index === openIndex && (
+        <p
+          className={`${styles.accordionItem__answer} ${
+            index === 3 && styles.accordionItem__answer_marginTop
+          }`}
+        >
+          {answer}
+        </p>
+      )}
     </div>
   );
 };
