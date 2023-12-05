@@ -2,7 +2,6 @@
 
 .accordionItem {
   border-bottom: 1px solid $bg-bg-light-pink;
-
   &__titleContainer {
     button {
       background-color: #fff;
@@ -12,6 +11,9 @@
       align-items: center;
       justify-content: center;
       margin-left: 2.4rem;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
     }
   }
 
@@ -19,8 +21,13 @@
     font-size: clamp(1.4rem, 3vw, 1.6rem);
     color: $text-light;
     line-height: 2.4rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: $spacing-md;
     font-weight: 400;
+    line-height: 21px;
+
+    &_marginTop {
+      margin-top: $spacing-md;
+    }
   }
 }
 
@@ -35,24 +42,21 @@
   color: $text-bold;
   padding-bottom: 2.4rem;
 
+  &_removePadding {
+    padding-bottom: 0;
+  }
+
   &__question {
     font-size: clamp(1.6rem, 3vw, 1.8rem);
-    font-weight: 600;
-    line-height: 21.1px;
+    font-weight: 700;
 
     &_removeSpacing {
-      padding-bottom: 0;
       font-size: clamp(1.6rem, 3vw, 1.8rem);
       font-weight: 600;
     }
 
     &:hover {
       color: $accent-pink;
-    }
-
-    &_removeSapcing {
-      padding-bottom: 0;
-      background-color: aqua;
     }
   }
 }

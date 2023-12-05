@@ -6,10 +6,14 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
 
   return (
     <div
-      className={`${styles.accordionItem} ${index == 3 && styles.removeBorder}`}
+      className={`${styles.accordionItem} ${
+        index == 3 && styles.removeBorder
+      } `}
     >
       <div
-        className={`${styles.accordionItem__titleContainer} ${styles.titleContainer}`}
+        className={`${styles.accordionItem__titleContainer} ${
+          styles.titleContainer
+        } ${index === 3 && styles.titleContainer_removePadding}`}
       >
         <h2
           className={`custom_cursor ${
@@ -58,7 +62,13 @@ const AccordionItem = ({ dispatch, openIndex, index, accordionContent }) => {
       </div>
 
       {openIndex === index && (
-        <p className={styles.accordionItem__answer}>{answer}</p>
+        <p
+          className={`${styles.accordionItem__answer} ${
+            index === 3 && styles.accordionItem__answer_marginTop
+          }`}
+        >
+          {answer}
+        </p>
       )}
     </div>
   );
